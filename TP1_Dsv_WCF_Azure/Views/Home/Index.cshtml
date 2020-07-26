@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+        <!-- Button trigger modal -->
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SaaS_Modal">
+            SaaS
+        </button>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PaaS_Modal">
+            PaaS
+        </button>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#IaaS_Modal">
+            IaaS
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="SaaS_Modal" tabindex="-1" role="dialog" aria-labelledby="SaaS_Modal_Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="SaaS_Modal_Title">SaaS (Software as a Service)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: justify;">
+                            Comercialização de serviço (software, conteúdo, plataforma, etc) por meio virtual. O usuário apenas precisa de uma conexão com a internet para usá-lo. São executados na nuvem do contratado - responsável por garantir a operação do serviço pelo menos no nível mínimo do SLA do contrato.
+                        </p>
+                        <ul>
+                            <li>GitHub</li>
+                            <li>Office 365</li>
+                            <li>Spotify</li>
+                            <li>Zoom</li>
+                        </ul>  
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-outline-dark btn-md" href="https://www.salesforce.com/br/saas/">Bibliography</a>
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="PaaS_Modal" tabindex="-1" role="dialog" aria-labelledby="PaaS_Modal_Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="PaaS_Modal_Title">Platform as a Service</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        !!!!!!!!!!!!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="IaaS_Modal" tabindex="-1" role="dialog" aria-labelledby="IaaS_Modal_Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="IaaS_Modal_Title">IaaS (Infrastructure as a Service)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ????????????
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
