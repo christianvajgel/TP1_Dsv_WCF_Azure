@@ -2,106 +2,117 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="jumbotron">
-    <h1 class="display-4 text-muted">Cloud service types</h1>
-    <p class="lead">Cloud services tailored for your needs.</p>
-    <hr class="my-4">
+    @*<div class="container" style="text-align: center;">
+        <img src="https://assetsforwork.blob.core.windows.net/tp1-dsv-wcf-azure/saas_paas_iaas.jpg" height="316" width="750" />
+    </div>*@
 
-    <!-- Button trigger modal -->
+    <div class="jumbotron" style="background-color: transparent; margin-top: -60px; padding-bottom: 0 !important">
+        <h1 class="display-4 text-muted">Cloud service types</h1>
+        <p class="lead">Cloud services tailored for your needs.</p>
+        <hr class="my-4">
 
-    <div style="text-align: center;">
+        <div class="container" style="text-align: center; margin-top: -10px;">
+            <figure>
+                <img src="https://assetsforwork.blob.core.windows.net/tp1-dsv-wcf-azure/saas_paas_iaas.jpg" height="316" width="750" />
+                <figcaption class="text-muted" style="font-weight:lighter;">Cloud service provider's obligation on each infrastructure.</figcaption>
+            </figure>
+        </div>
 
-        <button type="button" style="width: 60px;" class="btn btn-outline-dark btn-md" data-toggle="modal" data-target="#SaaS_Modal">
-            SaaS
-        </button>
+        <!-- Button trigger modal -->
 
-        <button type="button" style="width: 60px;" class="btn btn-outline-dark btn-md" data-toggle="modal" data-target="#PaaS_Modal">
-            PaaS
-        </button>
+        <div style="text-align: center; margin-top: 40px;">
 
-        <button type="button" style="width: 60px;" class="btn btn-outline-dark btn-md" data-toggle="modal" data-target="#IaaS_Modal">
-            IaaS
-        </button>
+            <button type="button" style="width: 60px;" class="btn btn-outline-dark btn-md" data-toggle="modal" data-target="#SaaS_Modal">
+                SaaS
+            </button>
 
-    </div>
+            <button type="button" style="width: 60px;" class="btn btn-outline-dark btn-md" data-toggle="modal" data-target="#PaaS_Modal">
+                PaaS
+            </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="SaaS_Modal" tabindex="-1" role="dialog" aria-labelledby="SaaS_Modal_Title" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="SaaS_Modal_Title">SaaS (Software as a Service)</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+            <button type="button" style="width: 60px;" class="btn btn-outline-dark btn-md" data-toggle="modal" data-target="#IaaS_Modal">
+                IaaS
+            </button>
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="SaaS_Modal" tabindex="-1" role="dialog" aria-labelledby="SaaS_Modal_Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="SaaS_Modal_Title">Software as a Service</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: justify;">
+                            Online service commercialization (software, content, platform, etc). The user just needs an internet connection to use it. They are executed in the contractor's cloud - responsible for ensuring the service operation at least at the minimum level based on the SLA contract.
+                        </p>
+                        <ul>
+                            <li>GitHub</li>
+                            <li>Office 365</li>
+                            <li>Spotify</li>
+                            <li>Zoom</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-outline-dark btn-md" href="https://www.salesforce.com/br/saas/">Bibliography</a>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <p style="text-align: justify;">
-                        Comercialização de serviço (software, conteúdo, plataforma, etc) por meio virtual. O usuário apenas precisa de uma conexão com a internet para usá-lo. São executados na nuvem do contratado - responsável por garantir a operação do serviço pelo menos no nível mínimo do SLA do contrato.
-                    </p>
-                    <ul>
-                        <li>GitHub</li>
-                        <li>Office 365</li>
-                        <li>Spotify</li>
-                        <li>Zoom</li>
-                    </ul>
+            </div>
+        </div>
+
+        <div class="modal fade" id="PaaS_Modal" tabindex="-1" role="dialog" aria-labelledby="PaaS_Modal_Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="PaaS_Modal_Title">Platform as a Service</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: justify;">
+                            Commercialization of a development environment and complete deployment in the cloud, it has resources that allow the deploy of several types of applications, from simple programs to complex systems. Different payment models, where the client rents just the necessary resources from a public cloud provider, the customer only needs a secure connection to the Internet.
+                        </p>
+                        <ul>
+                            <li>Google App Engine</li>
+                            <li>Heroku</li>
+                            <li>Salesforce</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-outline-dark btn-md" href="https://azure.microsoft.com/pt-br/overview/what-is-paas/">Bibliography</a>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <a class="btn btn-outline-dark btn-md" href="https://www.salesforce.com/br/saas/">Bibliography</a>
+            </div>
+        </div>
+
+        <div class="modal fade" id="IaaS_Modal" tabindex="-1" role="dialog" aria-labelledby="IaaS_Modal_Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="IaaS_Modal_Title">Infrastructure as a Service</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: justify;">
+                            Commercialization of quick access computing infrastructure, provided and managed by the internet. It can be quickly scaled up and down according to the demand of the service, allowing the payment of the right ammount of resources that were used. It eliminates the costs of setting up and managing a private cloud, the customer only pays the operational costs of the resources used in the public cloud. The cloud provider provides the infrastructure and the client is responsible for configuring the rest in the best way for their needs.
+                        </p>
+                        <ul>
+                            <li>Amazon Web Services (AWS)</li>
+                            <li>Google Cloud Platform (GCP)</li>
+                            <li>Microsoft Azure</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-outline-dark btn-md" href="https://azure.microsoft.com/pt-br/overview/what-is-iaas/">Bibliography</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="modal fade" id="PaaS_Modal" tabindex="-1" role="dialog" aria-labelledby="PaaS_Modal_Title" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="PaaS_Modal_Title">Platform as a Service</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p style="text-align: justify;">
-                        Comercialização de ambiente de desenvolvimento e implantação completo na nuvem, possui recursos que permitem o fornecimento de diversos tipos de aplicativos desde simples programas a sistemas complexos. Diferentes modelos de pagamentos, o cliente aluga os recursos necessários em um provedor de nuvem público, necessitando apenas de uma conexão segura com a Internet.
-                    </p>
-                    <ul>
-                        <li>Google App Engine</li>
-                        <li>Heroku</li>
-                        <li>Salesforce</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <a class="btn btn-outline-dark btn-md" href="https://azure.microsoft.com/pt-br/overview/what-is-paas/">Bibliography</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="IaaS_Modal" tabindex="-1" role="dialog" aria-labelledby="IaaS_Modal_Title" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="IaaS_Modal_Title">IaaS (Infrastructure as a Service)</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p style="text-align: justify;">
-                        Comercialização de infraestrutura computacional de fácil acesso, fornecida e gerenciada pela internet. Pode rapidamente ser escalonável de acordo com a demanda do serviço, permitindo pagamento apenas da quantidade de recurso que foi utilizada. Elimina os custos de montar e gerenciar uma nuvem privada sendo apenas necessário cobrir os gastos operacionais dos recursos utilizados da nuvem pública. O provedor de nuvem fornece a infraestrutura e o cliente fica responsável por configurar o restante da melhor forma para sua necessidade.
-                    </p>
-                    <ul>
-                        <li>Amazon Web Services (AWS)</li>
-                        <li>Google Cloud Platform (GCP)</li>
-                        <li>Microsoft Azure</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <a class="btn btn-outline-dark btn-md" href="https://azure.microsoft.com/pt-br/overview/what-is-iaas/">Bibliography</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
